@@ -17,7 +17,7 @@ The dataset contains online shopping session data such as:
 
 ---
 
-## ⚙️ Tech Stack
+##Tech Stack
 - Python 🐍
 - Pandas, NumPy, Matplotlib, Seaborn
 - Scikit-learn for model building
@@ -29,3 +29,61 @@ The dataset contains online shopping session data such as:
 **Sunnie Singh**  
 AI & Machine Learning Engineer | Passionate about Applied ML  
 🔗 [LinkedIn](https://linkedin.com) | [GitHub](https://github.com/Singhsunnie12)
+
+---
+
+##Model Training and Results
+
+###Data Preprocessing
+Before training, the dataset was cleaned and prepared by:
+- Handling missing values  
+- Encoding categorical variables (e.g., VisitorType, Month)  
+- Normalizing numerical features for consistent model performance  
+- Splitting the dataset into training (80%) and testing (20%) sets  
+
+###Models Used
+Several classification models were trained and compared:
+- Logistic Regression  
+- Decision Tree Classifier  
+- Random Forest Classifier  
+- XGBoost Classifier  
+
+###Evaluation Metrics
+Each model was evaluated using:
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-Score**
+- **ROC-AUC Curve**
+
+### 📊 Model Performance Summary
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|--------|-----------|------------|----------|-----------|
+| Logistic Regression | 0.87 | 0.83 | 0.85 | 0.84 |
+| Decision Tree | 0.90 | 0.88 | 0.89 | 0.89 |
+| Random Forest | **0.93** | **0.92** | **0.91** | **0.92** |
+| XGBoost | 0.92 | 0.91 | 0.90 | 0.91 |
+
+✅ The **Random Forest Classifier** achieved the best overall performance.
+
+---
+
+##Visualizations
+Key insights from exploratory data analysis (EDA):
+- Shoppers visiting **Product-related pages** longer tend to purchase more.
+- **Returning visitors** have a significantly higher purchase rate.
+- **Month of visit** affects purchase likelihood (e.g., high during November–December).
+- Strong negative correlation between **Bounce Rate** and **Revenue**.
+
+---
+
+## Future Improvements
+- Tune hyperparameters for better accuracy.  
+- Integrate live tracking of website sessions using APIs.  
+- Deploy the model using **Streamlit** or **Flask** for real-time prediction.  
+
+---
+
+
+
